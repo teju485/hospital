@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-full bg-neutral-100">
+    <nav class="bg-neutral-100 px-4 py-2 shadow-md sticky top-0 z-10">
+        <div class="flex items-center justify-between gap-4">
+            <img src="../images/hospital.png" alt="not found" class="w-20 sm:w-28">
+
+            <div class="hidden md:flex items-center relative flex-1 max-w-md mx-2 sm:mx-6">
+                <input type="text" placeholder="Search for diseases or Hospital"
+                    class="border border-emerald-600 rounded-xl pl-5 pr-12 py-1.5 bg-white w-full" />
+                <ion-icon name="search" class="absolute right-3 text-emerald-500 text-xl cursor-pointer"></ion-icon>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-emerald-500 text-3xl focus:outline-none">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <ul id="nav-links" class="hidden md:flex flex-row gap-4 sm:gap-6 text-emerald-500 items-center">
+                <li><a href="">Home</a></li>
+                <li><a href="">Hospitals</a></li>
+                <li><a href="">Consult</a></li>
+                <li><a href="">Privacy Policy</a></li>
+
+            </ul>
+        </div>
+        <div class="flex md:hidden items-center relative mt-3 px-2">
+            <input type="text" placeholder="Search for diseases or Hospital"
+                class="border border-emerald-600 rounded-xl pl-5 pr-12 py-1.5 bg-white w-full" />
+            <ion-icon name="search" class="absolute right-5 text-emerald-500 text-xl cursor-pointer"></ion-icon>
+        </div>
+        <ul id="mobile-menu"
+            class="md:hidden flex-col gap-4 text-emerald-500 mt-3 hidden bg-neutral-100 rounded shadow px-4 py-2">
+            <li><a href="">Home</a></li>
+            <li><a href="">Hospitals</a></li>
+            <li><a href="">Consult</a></li>
+            <li><a href="">Privacy Policy</a></li>
+        </ul>
+
+        </div>
+       
+    </nav>
+  <span class="flex items-center rounded-l-2xl bg-emerald-500 px-4 py-1 gap-2 ml-auto  shadow-lg sticky top-0  z-40 w-max">
+    <ion-icon name="person" class="bg-white rounded-2xl p-1 text-emerald-500"></ion-icon>
+    <a href="" class="text-white cursor-pointer">Login</a>
+</span>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <div class="mx-2 sm:mx-6 md:mx-20">
+        <img src="../images/hospital-1.webp" alt=""
+            class="w-full h-64 sm:h-80 md:h-100 object-cover opacity-50 rounded-lg">
+        <span class="relative bottom-32 sm:bottom-60 flex justify-center items-center">
+            <input type="text" placeholder="search for deaseses or Hospital"
+                class="border-emerald-600 border w-full max-w-xl rounded-xl pl-5 py-1.5 bg-white">
+            <ion-icon name="search"
+                class="bg-emerald-500 rounded-xl px-2.5 py-2.5 relative right-8 cursor-pointer"></ion-icon>
+        </span>
+    </div>
+    <div class="mx-2 sm:mx-6 md:mx-20 text-emerald-500 mt-8">
+        <h2 class="text-xl">Explore Hospitals</h2>
+        <a href="">See all...</a>
+    </div>
+    <div class="mx-2 sm:mx-6 md:mx-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 my-8 mt-10">
+        <div class="flex items-center flex-col gap-2 cursor-pointer hover:scale-105 transition-transform">
+            <img src="../images/heart.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Tubereculosis</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/appendix.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Appendix</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/translayion.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Transplantation</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/brai.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Brain tumer</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/image.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Diabetes</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/plastic.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Plastic surgery</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/tumer.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Alzhemer</p>
+        </div>
+        <div class="flex items-center flex-col gap-2 hover:scale-105 cursor-pointer transition-transform">
+            <img src="../images/maleria.png" alt=""
+                class="bg-emerald-500 w-40 sm:w-48 h-40 sm:h-48 object-contain rounded-xl">
+            <p class="text-white relative bottom-10 sm:bottom-14">Maleria</p>
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row mx-2 sm:mx-6 md:mx-20 gap-8 items-center">
+        <div class="flex flex-col gap-5 flex-1">
+            <p class="text-2xl mb-4">Why <span class="text-4xl text-emerald-500">Rapid Hospital?</span></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe consequatur omnis quos, recusandae
+                harum consequuntur commodi quaerat rem similique aperiam! Distinctio at fuga necessitatibus consequatur
+                est ipsam e laudantium, omnis consequu dignissimos Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <img src="../images/docter.png" alt="not found"
+            class="w-64 sm:w-80 md:w-96 h-auto relative bottom-5 md:bottom-10">
+    </div>
+    <div
+        class="bg-emerald-400 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 sm:p-10 mx-2 sm:mx-6 md:mx-20 mt-10 rounded-lg">
+        <div
+            class="bg-emerald-500 p-6 sm:p-10 flex flex-col items-center hover:scale-105 cursor-pointer transition-transform rounded-lg">
+            <img src="../images/bill.png" class="w-16 sm:w-20 h-auto" alt="">
+            <p class="text-center">Get the best and most effeient<br>treatement by exploring the best has<br>pital
+                wiredraw</p>
+        </div>
+        <div
+            class="bg-emerald-500 p-6 sm:p-10 flex flex-col items-center hover:scale-105 cursor-pointer transition-transform rounded-lg">
+            <img src="../images/docter1.png" class="w-16 sm:w-20 h-auto py-3 sm:py-5" alt="">
+            <p class="text-center">Get an opportunity to consult with t<br> export docter worldwide</p>
+        </div>
+        <div
+            class="bg-emerald-500 p-6 sm:p-10 flex flex-col items-center hover:scale-105 cursor-pointer transition-transform rounded-lg">
+            <img src="../images/money.png" class="w-16 sm:w-20 h-auto py-3 sm:py-5" alt="">
+            <p class="text-center">stop checking cost to many hospital<br> and avoid extra charges</p>
+        </div>
+    </div>
+    <div class="flex flex-col items-center gap-3 bg-red-200 justify-center w-60 h-20 p-6 sm:p-10 my-10 mx-auto rounded">
+        <p>Error in review system</p>
+        <a href=""><button class="bg-blue-500 p-1 rounded cursor-pointer hover:scale-105">Refresh</button></a>
+    </div>
+    <div class="mx-2 sm:mx-6 md:mx-20">
+        <img src="../images/hospital.webp" alt="" class="w-full h-48 sm:h-64 rounded-lg">
+    </div>
+    <div class="mx-2 sm:mx-6 md:mx-20 mt-10 bg-emerald-500 text-white p-6 sm:p-9 rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-x-14 md:gap-y-6">
+            <div class="flex flex-col gap-5">
+                <p class="text-xl">RAPID HOSPITAL</p>
+                <div>
+                    <p>Lorem ipsum dolor consectetur, adipisicing elit. Soluta eos deserunt alias hic esse</p>
+                    <p>Lorem ipsum dolor consectetur, adipisicing elit. Soluta eos deserunt alias hic esse</p>
+                </div>
+            </div>
+            <div></div>
+            <div class="mb-5">
+                <h2>Contacts</h2>
+                <p>Phone:850-123-5021</p>
+                <p>Email:info@icerm.mail</p>
+                <p>Address: 312 lovey,street NY</p>
+            </div>
+            <div>
+                <h2>Social</h2>
+                <div class="flex gap-2">
+                    <a href=""> <ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href=""> <ion-icon name="logo-github"></ion-icon></a>
+                    <a href=""> <ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href=""> <ion-icon name="logo-google"></ion-icon></a>
+                    <a href=""> <ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, vero?</p>
+            </div>
+        </div>
+        <hr>
+        <div class="flex flex-col md:flex-row items-center justify-between pt-3 gap-2">
+            <p>Copyright-2020 Lorem icc-All_right reserved</p>
+            <div class="flex gap-3"><a href="">privacy policy</a>
+                <a href="">terms and conditions</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
